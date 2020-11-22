@@ -3,7 +3,7 @@ export const homeObjOne = {
   lightBg: false,
   lightHeadingText: true,
   darkText: false,
-  topLine: "Premium Bank",
+  topLine: "Premium Management",
   headline: "Unlimited Transaction with zero fees",
   description:
     "Get access to our exclusive app that allows you to send unlimited transactions without getting charget any fees",
@@ -20,8 +20,8 @@ export const homeObjTwo = {
   lightBg: true,
   lightHeadingText: false,
   darkText: true,
-  topLine: "Premium Bank",
-  headline: "Unlimited Transaction with zero fees",
+  topLine: "Join our Team",
+  headline: "Creating an account is extreamly hard",
   description:
     "Get access to our exclusive app that allows you to send unlimited transactions without getting charget any fees",
   buttonLabel: "Get Started",
@@ -33,10 +33,10 @@ export const homeObjTwo = {
 };
 
 export const homeObjThree = {
-  id: "services",
-  lightBg: false,
-  lightHeadingText: true,
-  darkText: false,
+  id: "signup",
+  lightBg: true,
+  lightHeadingText: false,
+  darkText: true,
   topLine: "Premium Bank",
   headline: "Unlimited Transaction with zero fees",
   description:
@@ -45,6 +45,6 @@ export const homeObjThree = {
   imgStart: false,
   img: require("../../images/svg-1.svg").default,
   alt: "Card",
-  dark: true,
-  primary: true,
+  dark: false,
+  primary: false,
 };

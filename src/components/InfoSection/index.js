@@ -32,7 +32,6 @@ function InfoSection({
   primary,
   darkText,
 }) {
-  console.log(img);
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>

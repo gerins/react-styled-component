@@ -3,7 +3,7 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: #000;
+  background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -68,17 +68,16 @@ export const NavMenu = styled.ul`
   }
 `;
 
-export const NavItem = styled.li`
-  height: 80px;
-`;
+export const NavItem = styled.li``;
 
 export const NavLinks = styled(LinkS)`
-  color: #fff;
+  height: 80px; // tadinya di navItem
+  /* height: 100%; */ // tadinya nyala
   display: flex;
+  color: #fff;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
-  height: 100%;
   cursor: pointer;
 
   &.active {

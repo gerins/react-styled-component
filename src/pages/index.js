@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import HeroSection from "../components/HeroSection";
 import InfoSection from "../components/InfoSection";
 import { homeObjOne, homeObjTwo, homeObjThree } from "../components/InfoSection/Data";
+import ServicesPage from "../components/ServicesPage";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +18,9 @@ const Home = () => {
       <HeroSection />
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
+      <ServicesPage id={"services"} />
       <InfoSection {...homeObjThree} />
+      <Footer />
     </>
   );
 };
